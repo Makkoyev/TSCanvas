@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+html * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+}
+
+#nav-bar div {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav-bar div a {
+  color: #2b8f9e;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+}
+
+#nav-bar div a span i {
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+#nav-bar div a .logoText {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+#nav-bar ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: #2b8f9e;
+}
+
+#nav-bar ul li .btn {
+  border-radius: 3px;
+  border: 1px solid #2b8f9e;
+  padding: .5rem;
+}
+
+main .bgHero {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2b8f9e;
+}
+
+main .bgHero .cubeAnimation {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+}
+
+main .bgHero .bgHeroContent {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .bgHero .bgHeroContent h1 {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+main .bgHero .bgHeroContent p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+main .bgHero .bgHeroContent a {
+  margin: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #2b8f9e;
+  text-align: center;
+  width: 200px;
+  -webkit-box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+          box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+main .bgHero .bgHeroContent a:hover {
+  -webkit-box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+          box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+}
+
+main .partners {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .partners span i {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: .5;
+}
+
+main .partners span i:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

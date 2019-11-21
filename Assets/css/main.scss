@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+// Color Palette
+$color1: #ffffff;
+$color2: #2b8f9e;
+$color3: #f48d84;
+$color4: #45106c;
+$color5: #2f373a;
+$color6: #212a33;
+
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+#nav-bar {
+    background: $color1;
+    display: flex;
+    height: 10vh;
+    div {
+        flex-basis: 25%;
+        display: flex;
+        justify-content: center;
+        a {
+            color: $color2;
+            align-self: center;
+            text-decoration: none;
+            span {
+                i {
+                    margin-right: 5px;
+                    margin-top: 15px;
+                }
+            }
+            .logoText {
+                font-size: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 75%;
+        li {
+            list-style: none;
+            padding: 1rem;
+            a {
+                text-decoration: none;
+                color: $color2;
+            }
+            .btn {
+                border-radius: 3px;
+                border: 1px solid $color2;
+                padding: .5rem;
+            }
+        }
+    }
+}
+main {
+    .bgHero {
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: $color2;
+        .cubeAnimation{
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+            background-size: cover;
+        }
+        .bgHeroContent {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                text-transform: capitalize;
+                font-weight: 300;
+                font-size: 2rem;
+                padding: 1rem;
+                color: $color1;
+            }
+            p {
+                color: $color1;
+                font-weight: 300;
+                font-size: 1.2rem;
+                padding: 1rem;
+            }
+            a {
+                margin: 1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 1rem 2rem;
+                border-radius: 3px;
+                background: $color1;
+                color: $color2;
+                text-align: center;
+                width: 200px;
+                box-shadow: 2px 2px 3px rgba($color1, .3);
+                transition-duration: .3s;
+                &:hover{
+                    box-shadow: 3px 3px 6px rgba($color1, .3);
+                }
+            }
+        }
+    }
+    .partners {
+        height: 10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        span {
+            i {
+                transition: opacity 1s ease-in-out;
+                opacity: .5;
+                &:hover {
+                    opacity: .9;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
