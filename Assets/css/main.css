@@ -401,4 +401,78 @@ main .enrichment .reveal-section .rev-content p {
   font-size: 1rem;
   font-weight: 300;
 }
+
+main .conversions {
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .conversions .content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .conversions .content h2 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+main .conversions .content p {
+  padding: 1rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+main .conversions .path {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid rgba(43, 143, 158, 0.5);
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  width: 50%;
+}
+
+main .conversions .path > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .conversions .path > div i {
+  margin-right: 5px;
+}
+
+main .conversions .path > div span {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .conversions .path > div a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b8f9e;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=main.css.map */
