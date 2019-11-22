@@ -402,4 +402,91 @@ main {
             }
         }
     }
+    footer {
+        height: 50vh;
+        background: $color6;
+        display: flex;
+        flex-direction: column;
+        >div {
+            display: flex;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                .li-heading {
+                    color: rgba($color1, .5);
+                    text-transform: uppercase;
+                }
+                li {
+                    list-style: none;
+                    flex-basis: calc(25vh / 7);
+                    justify-self: center;
+                    padding: .5rem;
+                    a {
+                        text-decoration: none;
+                        color: $color9;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .footer2 {
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                flex-basis: 50%;
+            }
+            .copyright {
+                display: flex;
+                justify-content: center;
+                a {
+                    color: $color2;
+                    align-self: center;
+                    text-decoration: none;
+                    span {
+                        i {
+                            color: rgba($color1, .5);
+                        }
+                    }
+                    .footerText {
+                        font-size: 1rem;
+                        color: rgba($color1, .5);
+                        margin-left: 5px;
+                    }
+                }
+                >span {
+                    align-self: center;
+                    text-decoration: none;
+                    color: rgba($color1, .3); 
+                    margin-left: 15px;
+                    font-weight: 300;
+                    font-size: 1rem;
+                }
+            }
+            .user {
+                display: flex;
+                justify-content: space-evenly;
+                span {
+                    display: flex;
+                    a {
+                        color: $color9;
+                        border-radius: 4px;
+                        padding: .5rem 2rem;
+                        border: 1px solid $color9;
+                        display: flex;
+                        align-self: center;
+                        text-decoration: none;
+                        transition-duration: .5s;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgba($color9, .2);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -596,4 +596,146 @@ main .mailing-list > div .mailing button {
 main .mailing-list > div .mailing button:hover {
   cursor: pointer;
 }
+
+main footer {
+  height: 50vh;
+  background: #212a33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main footer > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+main footer > div ul .li-heading {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+main footer > div ul li {
+  list-style: none;
+  -ms-flex-preferred-size: calc(25vh / 7);
+      flex-basis: calc(25vh / 7);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: .5rem;
+}
+
+main footer > div ul li a {
+  text-decoration: none;
+  color: #24bebc;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+main footer .footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main footer .footer2 div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main footer .footer2 .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main footer .footer2 .copyright a {
+  color: #2b8f9e;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+}
+
+main footer .footer2 .copyright a span i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main footer .footer2 .copyright a .footerText {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 5px;
+}
+
+main footer .footer2 .copyright > span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+main footer .footer2 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main footer .footer2 .user span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main footer .footer2 .user span a {
+  color: #24bebc;
+  border-radius: 4px;
+  padding: .5rem 2rem;
+  border: 1px solid #24bebc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-decoration: none;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+main footer .footer2 .user span a:hover {
+  cursor: pointer;
+  background-color: rgba(36, 190, 188, 0.2);
+}
 /*# sourceMappingURL=main.css.map */
