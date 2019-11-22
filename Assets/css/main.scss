@@ -66,13 +66,17 @@ main {
         justify-content: space-evenly;
         align-items: center;
         background: $color2;
-        .cubeAnimation{
+        .imgWrapper{
             flex-basis: 50%;
             display: flex;
             justify-content: center;
-            height: 500px;
-            width: 500px;
-            background-size: cover;
+            .bg-image {
+                background: url('../img/database1.png') center no-repeat;
+                height: 250px;
+                width: 250px;
+                background-size: cover;
+            }
+
         }
         .bgHeroContent {
             flex-basis: 50%;
@@ -115,6 +119,7 @@ main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        background: rgba($color5, .1);
         span {
             i {
                 transition: opacity 1s ease-in-out;
@@ -123,6 +128,39 @@ main {
                     opacity: .9;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+    .quality-leads {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        .lead-header {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+        }
+        .img-timeline {
+            display: flex;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+            .server-img {
+                background: url('../img/database.png') center no-repeat;
+                width: 180px;
+                height: 180px;
+                background-size: cover;
+            }
+            .cube-img {
+                background: url('../img/database.png') center no-repeat;
+                width: 180px;
+                height: 180px;
+                background-size: cover;
+            }
+            .face-img {
+                background: url('../img/database.png') center no-repeat;
+                width: 180px;
+                height: 180px;
+                background-size: cover;
             }
         }
     }

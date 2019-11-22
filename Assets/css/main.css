@@ -90,7 +90,7 @@ main .bgHero {
   background: #2b8f9e;
 }
 
-main .bgHero .cubeAnimation {
+main .bgHero .imgWrapper {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   display: -webkit-box;
@@ -99,8 +99,12 @@ main .bgHero .cubeAnimation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 500px;
-  width: 500px;
+}
+
+main .bgHero .imgWrapper .bg-image {
+  background: url("../img/database1.png") center no-repeat;
+  height: 250px;
+  width: 250px;
   background-size: cover;
 }
 
@@ -166,6 +170,7 @@ main .partners {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(47, 55, 58, 0.1);
 }
 
 main .partners span i {
@@ -177,5 +182,60 @@ main .partners span i {
 main .partners span i:hover {
   opacity: .9;
   cursor: pointer;
+}
+
+main .quality-leads {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .quality-leads .lead-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .quality-leads .img-timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .quality-leads .img-timeline .server-img {
+  background: url("../img/database.png") center no-repeat;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+}
+
+main .quality-leads .img-timeline .cube-img {
+  background: url("../img/database.png") center no-repeat;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+}
+
+main .quality-leads .img-timeline .face-img {
+  background: url("../img/database.png") center no-repeat;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
