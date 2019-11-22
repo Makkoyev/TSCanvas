@@ -345,4 +345,61 @@ main {
             }
         }
     }
+    .mailing-list {
+        height: 35vh;
+        //background: url('../img/world.jfif') center no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        >div {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: rgba($color1, .5);
+            height: 25vh;
+            border-radius: 6px;
+            text-align: center;
+            h2 {
+                padding: 1rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+            p {
+                padding: 1rem;
+                font-size: .8rem;
+                font-weight: 300;
+            }
+            .mailing {
+                align-self: center;
+                border: 2px solid rgba($color2, .5);
+                padding: .5rem .5rem;
+                border-radius: 4px;
+                display: flex;
+                input {
+                    padding: 1rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px 0 0 4px;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    padding: 1rem;
+                    margin-right: -1;
+                    border-radius: 0 4px 4px 0;
+                    background: rgba($color2, .8);
+                    border-radius: 4px;
+                    color: white;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
