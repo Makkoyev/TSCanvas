@@ -7,6 +7,8 @@ $color4: #45106c;
 $color5: #2f373a;
 $color6: #212a33;
 $color7: #f152a2;
+$color8: #43126d;
+$color9: #24bebc;
 
 html * {
     padding: 0;
@@ -133,7 +135,7 @@ main {
         }
     }
     .quality-leads {
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         .lead-header {
@@ -195,6 +197,71 @@ main {
                 }
             }
             
+        }
+    }
+    .enrichment {
+        height: 70vh;
+        background: linear-gradient(right, $color9, $color8);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $color1;
+        .enrichment-section {
+            display: flex;
+            justify-content: center;
+            .en-content {
+                flex-basis: 40%;
+                h2 {
+                    padding: 1rem;
+                    font-size: 1.8rem;
+                }
+                p {
+                    padding: 1rem;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
+            .en-img {
+                flex-basis: 40%;
+                display: flex;
+                justify-content: center;
+                >div {
+                    background: url('../img/email.png') center no-repeat;
+                    background-size: cover;
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+        }
+        .separator {
+
+        }
+        .reveal-section {
+            display: flex;
+            justify-content: center;
+            .rev-img {
+                flex-basis: 40%;
+                display: flex;
+                justify-content: center;
+                >div {
+                    background: url('../img/placeholder.png') center no-repeat;
+                    background-size: cover;
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+            .rev-content {
+                flex-basis: 40%;
+                h2 {
+                    padding: 1rem;
+                    font-size: 1.8rem;
+                }
+                p {
+                    padding: 1rem;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
         }
     }
 }

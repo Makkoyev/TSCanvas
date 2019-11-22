@@ -185,7 +185,7 @@ main .partners span i:hover {
 }
 
 main .quality-leads {
-  height: 50vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,5 +289,108 @@ main .quality-leads .img-timeline > div > .face-img {
   width: 170px;
   height: 170px;
   background-size: cover;
+}
+
+main .enrichment {
+  height: 70vh;
+  background: -webkit-gradient(linear, right top, left top, from(#24bebc), to(#43126d));
+  background: linear-gradient(right, #24bebc, #43126d);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #ffffff;
+}
+
+main .enrichment .enrichment-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .enrichment .enrichment-section .en-content {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+main .enrichment .enrichment-section .en-content h2 {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+main .enrichment .enrichment-section .en-content p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+main .enrichment .enrichment-section .en-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .enrichment .enrichment-section .en-img > div {
+  background: url("../img/email.png") center no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+}
+
+main .enrichment .reveal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .enrichment .reveal-section .rev-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .enrichment .reveal-section .rev-img > div {
+  background: url("../img/placeholder.png") center no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+}
+
+main .enrichment .reveal-section .rev-content {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+main .enrichment .reveal-section .rev-content h2 {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+main .enrichment .reveal-section .rev-content p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
