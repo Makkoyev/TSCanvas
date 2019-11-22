@@ -6,6 +6,7 @@ $color3: #f48d84;
 $color4: #45106c;
 $color5: #2f373a;
 $color6: #212a33;
+$color7: #f152a2;
 
 html * {
     padding: 0;
@@ -139,29 +140,61 @@ main {
             display: flex;
             flex-direction: column;
             flex-basis: 50%;
+            align-items: center;
+            justify-content: center;
+            .head-wrapper {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                h1 {
+                    text-align: center;
+                    padding: 1rem;
+                    font-size: 2rem;
+                }
+                p {
+                    text-align: center;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+            }
         }
         .img-timeline {
             display: flex;
             justify-content: space-evenly;
             flex-basis: 50%;
-            .server-img {
-                background: url('../img/database.png') center no-repeat;
-                width: 180px;
-                height: 180px;
-                background-size: cover;
+
+            > div {
+                display: flex;
+                align-self: center;
+                width: 240px;
+                height: 240px;
+                background: linear-gradient($color3, $color7);
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                >.server-img {
+                    background: url('../img/database.png') center no-repeat;
+                    width: 170px;
+                    height: 170px;
+                    background-size: cover;
+                    justify-self: center;
+                }
+                >.cube-img {
+                    background: url('../img/database.png') center no-repeat;
+                    width: 170px;
+                    height: 170px;
+                    background-size: cover;
+                }
+                >.face-img {
+                    background: url('../img/database.png') center no-repeat;
+                    width: 170px;
+                    height: 170px;
+                    background-size: cover;
+                }
             }
-            .cube-img {
-                background: url('../img/database.png') center no-repeat;
-                width: 180px;
-                height: 180px;
-                background-size: cover;
-            }
-            .face-img {
-                background: url('../img/database.png') center no-repeat;
-                width: 180px;
-                height: 180px;
-                background-size: cover;
-            }
+            
         }
     }
 }
