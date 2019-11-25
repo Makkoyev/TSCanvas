@@ -106,6 +106,10 @@ html * {
   position: relative;
 }
 
+#nav-bar > ul.nav-mobile > div.menu-icon {
+  margin-right: 5px;
+}
+
 #nav-bar > ul.nav-mobile > div.menu-icon::after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;

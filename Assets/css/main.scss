@@ -75,6 +75,7 @@ html * {
         align-content: center;
         position: relative;
         >div.menu-icon {
+            margin-right: 5px;
             &::after {
                 font-family: 'Font Awesome 5 Free';
                 font-weight: 900;
