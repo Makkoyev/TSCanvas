@@ -105,6 +105,9 @@ html * {
                      text-decoration: none;
                      padding: 1rem;
                      color: rgba($color5, .9);
+                     &::selection{
+                         background: transparent;
+                     }
                  }
             }
         }

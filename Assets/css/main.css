@@ -152,6 +152,14 @@ html * {
   color: rgba(47, 55, 58, 0.9);
 }
 
+#nav-bar > ul.nav-mobile > div.menu-items li a::-moz-selection {
+  background: transparent;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-items li a::selection {
+  background: transparent;
+}
+
 @media screen and (min-width: 980px) {
   #nav-bar > ul.nav-mobile {
     display: block;
