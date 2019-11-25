@@ -573,7 +573,7 @@ main {
                     border-radius: 4px 0 0 4px;
                     font-size: 1rem;
                     font-weight: 300;
-                    flex-basis: 75%;
+                    flex-basis: 65%;
                 }
                 button {
                     outline: none;
@@ -584,7 +584,10 @@ main {
                     background: rgba($color2, .8);
                     border-radius: 4px;
                     color: white;
-                    flex-basis: 25%;
+                    flex-basis: 35%;
+                    @media screen and (max-width: 400px) {
+                        padding: .8rem;
+                    }
                     &:hover{
                         cursor: pointer;
                     }

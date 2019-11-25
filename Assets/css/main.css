@@ -938,8 +938,8 @@ main .mailing-list > div .mailing input {
   border-radius: 4px 0 0 4px;
   font-size: 1rem;
   font-weight: 300;
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 main .mailing-list > div .mailing button {
@@ -951,8 +951,14 @@ main .mailing-list > div .mailing button {
   background: rgba(43, 143, 158, 0.8);
   border-radius: 4px;
   color: white;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+@media screen and (max-width: 400px) {
+  main .mailing-list > div .mailing button {
+    padding: .8rem;
+  }
 }
 
 main .mailing-list > div .mailing button:hover {
