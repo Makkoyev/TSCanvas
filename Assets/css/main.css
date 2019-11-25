@@ -126,6 +126,10 @@ html * {
   cursor: pointer;
 }
 
+#nav-bar > ul.nav-mobile > div.menu-icon > i:focus {
+  outline: none;
+}
+
 #nav-bar > ul.nav-mobile > div.menu-items {
   display: -webkit-box;
   display: -ms-flexbox;

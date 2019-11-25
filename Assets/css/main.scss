@@ -84,6 +84,9 @@ html * {
                 &:hover {
                     cursor: pointer;
                 }
+                &:focus{
+                    outline: none;
+                }
             }
             // margin-right: 5px;
             // &::after {
