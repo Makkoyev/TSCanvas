@@ -778,7 +778,7 @@ main .conversions .path {
 
 @media screen and (max-width: 1400px) {
   main .conversions .path {
-    width: 99%;
+    width: 90%;
   }
 }
 
