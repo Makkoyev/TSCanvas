@@ -876,8 +876,6 @@ main .mailing-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
 }
 
 main .mailing-list > div {
@@ -919,6 +917,17 @@ main .mailing-list > div .mailing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 730px) {
+  main .mailing-list > div .mailing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main .mailing-list > div .mailing input {
@@ -1145,6 +1154,7 @@ main .scroller {
 @media screen and (max-width: 600px) {
   main .scroller {
     left: 75vw;
+    top: 85vh;
   }
 }
 

@@ -536,7 +536,6 @@ main {
         background-position: center;
         display: flex;
         justify-content: center;
-        flex-basis: 90%;
         >div {
             align-self: center;
             display: flex;
@@ -563,6 +562,11 @@ main {
                 padding: .5rem .5rem;
                 border-radius: 4px;
                 display: flex;
+                width: 90%;
+                margin: 0 auto;
+                @media screen and (max-width: 730px) {
+                    flex-direction: column;
+                }
                 input {
                     padding: 1rem;
                     outline: none;
@@ -710,6 +714,7 @@ main {
         }
         @media screen and (max-width: 600px) {
             left: 75vw;
+            top: 85vh;
         }
         .scroller-wrapper {
             display: flex;
