@@ -119,7 +119,7 @@ html * {
 #nav-bar > ul.nav-mobile > div.menu-icon > i {
   font-size: 4rem;
   color: rgba(47, 55, 58, 0.9);
-  padding: 1rem;
+  padding: .5rem;
 }
 
 #nav-bar > ul.nav-mobile > div.menu-icon > i:hover {
