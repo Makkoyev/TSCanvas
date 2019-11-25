@@ -773,12 +773,14 @@ main .conversions .path {
 @media screen and (max-width: 1400px) {
   main .conversions .path {
     width: 75%;
+    padding: 1.2rem 2.4rem;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
   main .conversions .path {
     width: 90%;
+    padding: .8rem 1.6rem;
   }
 }
 
@@ -927,7 +929,7 @@ main .mailing-list > div .mailing {
 
 @media screen and (max-width: 1400px) {
   main .mailing-list > div .mailing {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -940,6 +942,14 @@ main .mailing-list > div .mailing input {
   font-weight: 300;
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
+}
+
+@media screen and (max-width: 600px) {
+  main .mailing-list > div .mailing input {
+    padding: .8rem;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
 }
 
 main .mailing-list > div .mailing button {
@@ -955,9 +965,11 @@ main .mailing-list > div .mailing button {
       flex-basis: 35%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   main .mailing-list > div .mailing button {
     padding: .8rem;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 

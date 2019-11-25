@@ -465,9 +465,11 @@ main {
             
             @media screen and (max-width: 1400px) {
                 width: 75%;
+                padding: 1.2rem 2.4rem;
             }
-            @media screen and (max-width: 1400px) {
+            @media screen and (max-width: 900px) {
                 width: 90%;
+                padding: .8rem 1.6rem;
             }
             >div {
                 display: flex;
@@ -564,7 +566,7 @@ main {
                     width: 75%;
                 }
                 @media screen and (max-width: 1400px) {
-                    width: 90%;
+                    width: 95%;
                 }
                 input {
                     padding: 1rem;
@@ -574,6 +576,10 @@ main {
                     font-size: 1rem;
                     font-weight: 300;
                     flex-basis: 65%;
+                    @media screen and (max-width: 600px) {
+                        padding: .8rem;
+                        flex-basis: 55%;
+                    }
                 }
                 button {
                     outline: none;
@@ -585,8 +591,9 @@ main {
                     border-radius: 4px;
                     color: white;
                     flex-basis: 35%;
-                    @media screen and (max-width: 400px) {
+                    @media screen and (max-width: 600px) {
                         padding: .8rem;
+                        flex-basis: 45%;
                     }
                     &:hover{
                         cursor: pointer;
