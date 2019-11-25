@@ -536,6 +536,7 @@ main {
         background-position: center;
         display: flex;
         justify-content: center;
+        flex-basis: 90%;
         >div {
             align-self: center;
             display: flex;
@@ -562,12 +563,6 @@ main {
                 padding: .5rem .5rem;
                 border-radius: 4px;
                 display: flex;
-                @media screen and (max-width: 1400px) {
-                    width: 75%;
-                }
-                @media screen and (max-width: 1400px) {
-                    width: 95%;
-                }
                 input {
                     padding: 1rem;
                     outline: none;
@@ -576,10 +571,6 @@ main {
                     font-size: 1rem;
                     font-weight: 300;
                     flex-basis: 65%;
-                    @media screen and (max-width: 600px) {
-                        padding: .8rem;
-                        flex-basis: 55%;
-                    }
                 }
                 button {
                     outline: none;
@@ -590,11 +581,7 @@ main {
                     background: rgba($color2, .8);
                     border-radius: 4px;
                     color: white;
-                    flex-basis: 35%;
-                    @media screen and (max-width: 600px) {
-                        padding: .8rem;
-                        flex-basis: 45%;
-                    }
+                    flex-basis: 55%;
                     &:hover{
                         cursor: pointer;
                     }
