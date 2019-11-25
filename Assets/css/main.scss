@@ -66,6 +66,7 @@ main {
     position: relative;
     .bgHero {
         height: 80vh;
+        min-height: 700px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -84,7 +85,8 @@ main {
                 background-size: cover;
             }
             @media screen and (max-width: 900px) {
-                align-items: center;
+                align-items: flex-end;
+                flex-basis: 40%;
             }
         }
         .bgHeroContent {
@@ -92,18 +94,27 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media screen and (max-width: 900px) {
+                flex-basis: 60%;
+            }
             h1 {
                 text-transform: capitalize;
                 font-weight: 300;
                 font-size: 2rem;
                 padding: 1rem;
                 color: $color1;
+                @media screen and (max-width: 900px) {
+                    padding: .5rem;
+                }
             }
             p {
                 color: $color1;
                 font-weight: 300;
                 font-size: 1.2rem;
                 padding: 1rem;
+                @media screen and (max-width: 900px) {
+                    padding: .5rem;
+                }
             }
             a {
                 margin: 1rem;
@@ -119,6 +130,9 @@ main {
                 transition-duration: .3s;
                 &:hover{
                     box-shadow: 3px 3px 6px rgba($color1, .3);
+                }
+                @media screen and (max-width: 900px) {
+                    padding: .5rem 1rem;
                 }
             }
         }
@@ -253,7 +267,7 @@ main {
     }
     .enrichment {
         height: 70vh;
-        min-height: 500px;
+        min-height: 800px;
         background: linear-gradient(right, $color9, $color8);
         display: flex;
         flex-direction: column;
@@ -366,6 +380,7 @@ main {
     }
     .conversions {
         height: 35vh;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -423,6 +438,7 @@ main {
     }
     .testimonial {
         height: 70vh;
+        min-height: 700px;
         background: url('../img/testimonial.jfif') center no-repeat;
         background-size: cover;
         box-shadow: 1px -1px 6px rgba($color5, .5);
@@ -454,6 +470,7 @@ main {
     }
     .mailing-list {
         height: 35vh;
+        min-height: 300px;
         //background: url('../img/world.jfif') center no-repeat;
         background-size: cover;
         background-position: center;
@@ -511,6 +528,7 @@ main {
     }
     footer {
         height: 50vh;
+        min-height: 500px;
         background: $color6;
         display: flex;
         flex-direction: column;

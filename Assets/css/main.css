@@ -82,6 +82,7 @@ main {
 
 main .bgHero {
   height: 80vh;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,9 +124,11 @@ main .bgHero .imgWrapper .bg-image {
 
 @media screen and (max-width: 900px) {
   main .bgHero .imgWrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 }
 
@@ -144,6 +147,13 @@ main .bgHero .bgHeroContent {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  main .bgHero .bgHeroContent {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
 main .bgHero .bgHeroContent h1 {
   text-transform: capitalize;
   font-weight: 300;
@@ -152,11 +162,23 @@ main .bgHero .bgHeroContent h1 {
   color: #ffffff;
 }
 
+@media screen and (max-width: 900px) {
+  main .bgHero .bgHeroContent h1 {
+    padding: .5rem;
+  }
+}
+
 main .bgHero .bgHeroContent p {
   color: #ffffff;
   font-weight: 300;
   font-size: 1.2rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main .bgHero .bgHeroContent p {
+    padding: .5rem;
+  }
 }
 
 main .bgHero .bgHeroContent a {
@@ -178,6 +200,12 @@ main .bgHero .bgHeroContent a {
 main .bgHero .bgHeroContent a:hover {
   -webkit-box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
           box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 900px) {
+  main .bgHero .bgHeroContent a {
+    padding: .5rem 1rem;
+  }
 }
 
 main .partners {
@@ -398,7 +426,7 @@ main .quality-leads .img-timeline > div > .face-img {
 
 main .enrichment {
   height: 70vh;
-  min-height: 500px;
+  min-height: 800px;
   background: -webkit-gradient(linear, right top, left top, from(#24bebc), to(#43126d));
   background: linear-gradient(right, #24bebc, #43126d);
   display: -webkit-box;
@@ -601,6 +629,7 @@ main .enrichment .reveal-section .rev-content p {
 
 main .conversions {
   height: 35vh;
+  min-height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,6 +723,7 @@ main .conversions .path > div a {
 
 main .testimonial {
   height: 70vh;
+  min-height: 700px;
   background: url("../img/testimonial.jfif") center no-repeat;
   background-size: cover;
   -webkit-box-shadow: 1px -1px 6px rgba(47, 55, 58, 0.5);
@@ -736,6 +766,7 @@ main .testimonial .content span {
 
 main .mailing-list {
   height: 35vh;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -815,6 +846,7 @@ main .mailing-list > div .mailing button:hover {
 
 main footer {
   height: 50vh;
+  min-height: 500px;
   background: #212a33;
   display: -webkit-box;
   display: -ms-flexbox;
