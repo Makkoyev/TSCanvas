@@ -913,8 +913,6 @@ main .mailing-list > div p {
 }
 
 main .mailing-list > div .mailing {
-  -ms-flex-item-align: center;
-      align-self: center;
   border: 2px solid rgba(43, 143, 158, 0.5);
   padding: .5rem .5rem;
   border-radius: 4px;
@@ -930,8 +928,8 @@ main .mailing-list > div .mailing input {
   border-radius: 4px 0 0 4px;
   font-size: 1rem;
   font-weight: 300;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 main .mailing-list > div .mailing button {
@@ -943,8 +941,8 @@ main .mailing-list > div .mailing button {
   background: rgba(43, 143, 158, 0.8);
   border-radius: 4px;
   color: white;
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 main .mailing-list > div .mailing button:hover {

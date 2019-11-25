@@ -558,7 +558,7 @@ main {
                 font-weight: 300;
             }
             .mailing {
-                align-self: center;
+                //align-self: center;
                 border: 2px solid rgba($color2, .5);
                 padding: .5rem .5rem;
                 border-radius: 4px;
@@ -570,7 +570,7 @@ main {
                     border-radius: 4px 0 0 4px;
                     font-size: 1rem;
                     font-weight: 300;
-                    flex-basis: 65%;
+                    flex-basis: 50%;
                 }
                 button {
                     outline: none;
@@ -581,7 +581,7 @@ main {
                     background: rgba($color2, .8);
                     border-radius: 4px;
                     color: white;
-                    flex-basis: 55%;
+                    flex-basis: 50%;
                     &:hover{
                         cursor: pointer;
                     }
