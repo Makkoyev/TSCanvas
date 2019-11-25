@@ -94,6 +94,15 @@ main .bgHero {
   background: #2b8f9e;
 }
 
+@media screen and (max-width: 900px) {
+  main .bgHero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .bgHero .imgWrapper {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -110,6 +119,14 @@ main .bgHero .imgWrapper .bg-image {
   height: 250px;
   width: 250px;
   background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  main .bgHero .imgWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 main .bgHero .bgHeroContent {
@@ -191,6 +208,7 @@ main .partners span i:hover {
 
 main .quality-leads {
   height: 70vh;
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +216,12 @@ main .quality-leads {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  main .quality-leads {
+    height: 60vh;
+  }
 }
 
 main .quality-leads .lead-header {
@@ -218,6 +242,13 @@ main .quality-leads .lead-header {
           justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  main .quality-leads .lead-header {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
 main .quality-leads .lead-header .head-wrapper {
   width: 60%;
   display: -webkit-box;
@@ -228,6 +259,12 @@ main .quality-leads .lead-header .head-wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main .quality-leads .lead-header .head-wrapper {
+    width: 90%;
+  }
 }
 
 main .quality-leads .lead-header .head-wrapper h1 {
@@ -254,6 +291,13 @@ main .quality-leads .img-timeline {
       flex-basis: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  main .quality-leads .img-timeline {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
 main .quality-leads .img-timeline > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +317,20 @@ main .quality-leads .img-timeline > div {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  main .quality-leads .img-timeline > div {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .quality-leads .img-timeline > div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 main .quality-leads .img-timeline > div > .server-img {
   background: url("../img/database2.png") center no-repeat;
   width: 170px;
@@ -282,11 +340,39 @@ main .quality-leads .img-timeline > div > .server-img {
       justify-self: center;
 }
 
+@media screen and (max-width: 900px) {
+  main .quality-leads .img-timeline > div > .server-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .quality-leads .img-timeline > div > .server-img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 main .quality-leads .img-timeline > div > .cube-img {
   background: url("../img/database.png") center no-repeat;
   width: 170px;
   height: 170px;
   background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  main .quality-leads .img-timeline > div > .cube-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .quality-leads .img-timeline > div > .cube-img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 main .quality-leads .img-timeline > div > .face-img {
@@ -296,8 +382,23 @@ main .quality-leads .img-timeline > div > .face-img {
   background-size: cover;
 }
 
+@media screen and (max-width: 900px) {
+  main .quality-leads .img-timeline > div > .face-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .quality-leads .img-timeline > div > .face-img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 main .enrichment {
   height: 70vh;
+  min-height: 500px;
   background: -webkit-gradient(linear, right top, left top, from(#24bebc), to(#43126d));
   background: linear-gradient(right, #24bebc, #43126d);
   display: -webkit-box;
@@ -327,15 +428,41 @@ main .enrichment .enrichment-section .en-content {
       flex-basis: 40%;
 }
 
+@media screen and (max-width: 1200px) {
+  main .enrichment .enrichment-section .en-content {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
 main .enrichment .enrichment-section .en-content h2 {
   padding: 1rem;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  main .enrichment .enrichment-section .en-content {
+    padding: .5rem;
+  }
 }
 
 main .enrichment .enrichment-section .en-content p {
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+  main .enrichment .enrichment-section .en-content {
+    padding: .5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .enrichment .enrichment-section .en-content {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
 }
 
 main .enrichment .enrichment-section .en-img {
@@ -349,11 +476,34 @@ main .enrichment .enrichment-section .en-img {
           justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  main .enrichment .enrichment-section .en-img {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
 main .enrichment .enrichment-section .en-img > div {
   background: url("../img/email.png") center no-repeat;
   background-size: cover;
   height: 250px;
   width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main .enrichment .enrichment-section .en-img > div {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .enrichment .enrichment-section .en-img {
+    display: none;
+  }
 }
 
 main .enrichment .separator {
@@ -384,11 +534,34 @@ main .enrichment .reveal-section .rev-img {
           justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  main .enrichment .reveal-section .rev-img {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
 main .enrichment .reveal-section .rev-img > div {
   background: url("../img/placeholder.png") center no-repeat;
   background-size: cover;
   height: 250px;
   width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  main .enrichment .reveal-section .rev-img > div {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .enrichment .reveal-section .rev-img {
+    display: none;
+  }
 }
 
 main .enrichment .reveal-section .rev-content {
@@ -396,15 +569,34 @@ main .enrichment .reveal-section .rev-content {
       flex-basis: 40%;
 }
 
+@media screen and (max-width: 1200px) {
+  main .enrichment .reveal-section .rev-content {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
 main .enrichment .reveal-section .rev-content h2 {
   padding: 1rem;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  main .enrichment .reveal-section .rev-content h2 {
+    padding: .5rem;
+  }
 }
 
 main .enrichment .reveal-section .rev-content p {
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+  main .enrichment .reveal-section .rev-content p {
+    padding: .5rem;
+  }
 }
 
 main .conversions {
@@ -450,14 +642,33 @@ main .conversions .path {
   width: 50%;
 }
 
+@media screen and (max-width: 1400px) {
+  main .conversions .path {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main .conversions .path {
+    width: 99%;
+  }
+}
+
 main .conversions .path > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
 }
 
 main .conversions .path > div i {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 730px) {
+  main .conversions .path > div i {
+    display: none;
+  }
 }
 
 main .conversions .path > div span {

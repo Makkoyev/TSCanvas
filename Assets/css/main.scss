@@ -70,6 +70,9 @@ main {
         justify-content: space-evenly;
         align-items: center;
         background: $color2;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
         .imgWrapper{
             flex-basis: 50%;
             display: flex;
@@ -80,7 +83,9 @@ main {
                 width: 250px;
                 background-size: cover;
             }
-
+            @media screen and (max-width: 900px) {
+                align-items: center;
+            }
         }
         .bgHeroContent {
             flex-basis: 50%;
@@ -139,19 +144,29 @@ main {
     }
     .quality-leads {
         height: 70vh;
+        min-height: 600px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 600px) {
+            height: 60vh;
+        }
         .lead-header {
             display: flex;
             flex-direction: column;
             flex-basis: 50%;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width: 600px) {
+                flex-basis: 70%;
+            }
             .head-wrapper {
                 width: 60%;
                 display: flex;
                 flex-direction: column;
                 padding: 1rem;
+                @media screen and (max-width: 900px) {
+                    width: 90%;
+                }
                 h1 {
                     text-align: center;
                     padding: 1rem;
@@ -169,7 +184,9 @@ main {
             display: flex;
             justify-content: space-evenly;
             flex-basis: 50%;
-
+            @media screen and (max-width: 600px) {
+                flex-basis: 30%;
+            }
             > div {
                 display: flex;
                 align-self: center;
@@ -179,24 +196,56 @@ main {
                 border-radius: 50%;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 900px) {
+                    width: 150px;
+                    height: 150px;
+                }
+                @media screen and (max-width: 600px) {
+                    width: 100px;
+                    height: 100px;
+                }
                 >.server-img {
                     background: url('../img/database2.png') center no-repeat;
                     width: 170px;
                     height: 170px;
                     background-size: cover;
                     justify-self: center;
+                    @media screen and (max-width: 900px) {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 75px;
+                        height: 75px;
+                    }
                 }
                 >.cube-img {
                     background: url('../img/database.png') center no-repeat;
                     width: 170px;
                     height: 170px;
                     background-size: cover;
+                    @media screen and (max-width: 900px) {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 75px;
+                        height: 75px;
+                    }
                 }
                 >.face-img {
                     background: url('../img/laptop.png') center no-repeat;
                     width: 170px;
                     height: 170px;
                     background-size: cover;
+                    @media screen and (max-width: 900px) {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 75px;
+                        height: 75px;
+                    }
                 }
             }
             
@@ -204,6 +253,7 @@ main {
     }
     .enrichment {
         height: 70vh;
+        min-height: 500px;
         background: linear-gradient(right, $color9, $color8);
         display: flex;
         flex-direction: column;
@@ -214,25 +264,48 @@ main {
             justify-content: center;
             .en-content {
                 flex-basis: 40%;
+                @media screen and (max-width: 1200px) {
+                    flex-basis: 75%;
+                }
                 h2 {
                     padding: 1rem;
                     font-size: 1.8rem;
+                }
+                @media screen and (max-width: 600px) {
+                    padding: .5rem;
                 }
                 p {
                     padding: 1rem;
                     font-size: 1rem;
                     font-weight: 300;
                 }
+                @media screen and (max-width: 600px) {
+                    padding: .5rem;
+                }
+                @media screen and (max-width: 900px) {
+                    flex-basis: 90%;
+                }
             }
             .en-img {
                 flex-basis: 40%;
                 display: flex;
                 justify-content: center;
+                @media screen and (max-width: 1200px) {
+                    flex-basis: 25%;
+                }
                 >div {
                     background: url('../img/email.png') center no-repeat;
                     background-size: cover;
                     height: 250px;
                     width: 250px;
+                    align-self: center;
+                    @media screen and (max-width: 1200px) {
+                        width: 170px;
+                        height: 170px;
+                    }
+                }
+                @media screen and (max-width: 900px) {
+                    display: none;
                 }
             }
         }
@@ -250,23 +323,43 @@ main {
                 flex-basis: 40%;
                 display: flex;
                 justify-content: center;
+                @media screen and (max-width: 1200px) {
+                    flex-basis: 25%;
+                }
                 >div {
                     background: url('../img/placeholder.png') center no-repeat;
                     background-size: cover;
                     height: 250px;
                     width: 250px;
+                    align-self: center;
+                    @media screen and (max-width: 1200px) {
+                        width: 170px;
+                        height: 170px;
+                    }
+                }
+                @media screen and (max-width: 900px) {
+                    display: none;
                 }
             }
             .rev-content {
                 flex-basis: 40%;
+                @media screen and (max-width: 1200px) {
+                    flex-basis: 90%;
+                }
                 h2 {
                     padding: 1rem;
                     font-size: 1.8rem;
+                    @media screen and (max-width: 600px) {
+                        padding: .5rem;
+                    }
                 }
                 p {
                     padding: 1rem;
                     font-size: 1rem;
                     font-weight: 300;
+                    @media screen and (max-width: 600px) {
+                        padding: .5rem;
+                    }
                 }
             }
         }
@@ -296,10 +389,21 @@ main {
             padding: 1.5rem 3rem;
             border-radius: 4px;
             width: 50%;
+            
+            @media screen and (max-width: 1400px) {
+                width: 75%;
+            }
+            @media screen and (max-width: 1400px) {
+                width: 99%;
+            }
             >div {
                 display: flex;
+                text-align: center;
                 i {
                     margin-right: 5px;
+                    @media screen and (max-width: 730px) {
+                        display: none;
+                    }
                 }
                 span {
                     flex-basis: 50%;
