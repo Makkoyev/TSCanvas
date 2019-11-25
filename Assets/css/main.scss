@@ -75,19 +75,25 @@ html * {
         align-content: center;
         position: relative;
         >div.menu-icon {
-            margin-right: 5px;
-            &::after {
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                content: '\f0c9';
-                display: flex;
+            display: flex;
+            flex-direction: column;
+            >i {
                 font-size: 4rem;
-                //padding: 1rem;
                 color: rgba($color5, .9);
+                &:hover {
+                    cursor: pointer;
+                }
             }
-            &:hover {
-                cursor: pointer;
-            }
+            // margin-right: 5px;
+            // &::after {
+            //     font-family: 'Font Awesome 5 Free';
+            //     font-weight: 900;
+            //     content: '\f0c9';
+            //     display: flex;
+            //     font-size: 4rem;
+            //     //padding: 1rem;
+            //     color: rgba($color5, .9);
+            // }
         }
         >div.menu-items {
             display: flex;

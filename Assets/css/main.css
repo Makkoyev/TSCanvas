@@ -107,21 +107,21 @@ html * {
 }
 
 #nav-bar > ul.nav-mobile > div.menu-icon {
-  margin-right: 5px;
-}
-
-#nav-bar > ul.nav-mobile > div.menu-icon::after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f0c9';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-icon > i {
   font-size: 4rem;
   color: rgba(47, 55, 58, 0.9);
 }
 
-#nav-bar > ul.nav-mobile > div.menu-icon:hover {
+#nav-bar > ul.nav-mobile > div.menu-icon > i:hover {
   cursor: pointer;
 }
 
