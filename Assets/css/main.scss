@@ -25,7 +25,7 @@ html * {
         flex-basis: 25%;
         display: flex;
         justify-content: center;
-        a {
+        >a {
             color: $color2;
             align-self: center;
             text-decoration: none;
@@ -42,12 +42,12 @@ html * {
             }
         }
     }
-    ul {
+    >ul {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-basis: 75%;
-        li {
+        >li {
             list-style: none;
             padding: 1rem;
             a {
@@ -63,6 +63,7 @@ html * {
     }
 }
 main {
+    position: relative;
     .bgHero {
         height: 80vh;
         display: flex;
@@ -125,11 +126,13 @@ main {
         background: rgba($color5, .1);
         span {
             i {
-                transition: opacity 1s ease-in-out;
+                //transition: opacity 1s ease-in-out;
                 opacity: .5;
+                transition-duration: 1s;
                 &:hover {
                     opacity: .9;
                     cursor: pointer;
+                    text-shadow: 3px 3px 6px rgba($color5, .4);
                 }
             }
         }
@@ -177,7 +180,7 @@ main {
                 align-items: center;
                 justify-content: center;
                 >.server-img {
-                    background: url('../img/database.png') center no-repeat;
+                    background: url('../img/database2.png') center no-repeat;
                     width: 170px;
                     height: 170px;
                     background-size: cover;
@@ -190,7 +193,7 @@ main {
                     background-size: cover;
                 }
                 >.face-img {
-                    background: url('../img/database.png') center no-repeat;
+                    background: url('../img/laptop.png') center no-repeat;
                     width: 170px;
                     height: 170px;
                     background-size: cover;
@@ -485,6 +488,72 @@ main {
                             background-color: rgba($color9, .2);
                         }
                     }
+                }
+            }
+        }
+    }
+    .scroller {
+        position: fixed;
+        top: 90vh;
+        left: 90vw;
+        background-color: $color3;
+        border-radius: 50%;
+        //padding: 1rem;
+        display: none;
+        //text-align: center;
+        .scroller-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 80px;
+            height: 80px;
+            justify-content: center;
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                align-self: center;
+            }
+        } 
+    }
+}
+
+.dropdown {
+    position: relative;
+    .dropdown-item {
+        &::after {
+            content: '\f309';
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+    }
+    &:hover > .dropdown-menu {
+        display: block !important;
+    }
+    &:hover > .dropdown-item::after {
+        content: '\f30c';
+    }
+    .dropdown-menu {
+        position: absolute;
+        display: none !important;
+        z-index: 1;
+        background-color: rgba($color1, .99);
+        width: 100%;
+        border-radius: 3px;
+        top: 100%;
+        left: 0%;
+        box-shadow: 1px 1px 3px rgba($color5, .7);
+        ul {
+            >li{
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background-color: rgba($color5, .1);
+                }
+                a {
+                    padding: 1rem;
                 }
             }
         }

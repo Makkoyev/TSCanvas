@@ -1,3 +1,3 @@
-import { mainFunction } from "./modules/canvas.js"
+import { mainScrollFunction } from "./modules/manipulationDOM.js"
 
-mainFunction();
+mainScrollFunction();

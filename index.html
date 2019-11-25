@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <!-- <script src="https://unpkg.com/brain.js@2.0.0-alpha.9/dist/brain-browser.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Landing Page - Project 1</title>
 </head>
 
@@ -19,10 +19,21 @@
             </a>
         </div>
         <ul>
-            <li><a href="">Products</a></li>
-            <li><a href="">Integrations</a></li>
-            <li><a href="">Customers</a></li>
-            <li><a href="">Pricing</a></li>
+            <li><a href="#quality">Products</a></li>
+            <li><a href="#enrichment">Integrations</a></li>
+            <li class="dropdown">
+                <a class="dropdown-item" href="">Dropdown</a>
+                <div class="dropdown-menu animated fadeInLeft fast">
+                    <ul>
+                        <li class="sub-item"><a href="">Item 1</a></li>
+                        <li class="sub-item"><a href="">Item 2</a></li>
+                        <li class="sub-item"><a href="">Item 3</a></li>
+                        <li class="sub-item"><a href="">Item 4</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#conversions">Customers</a></li>
+            <li><a href="#testimonial">Pricing</a></li>
             <li><a href="" class="btn btn-login">Login</a></li>
         </ul>
     </nav>
@@ -44,7 +55,7 @@
             <span><i class="fab fa-docker fa-3x"></i></span>
             <span><i class="fab fa-firefox fa-3x"></i></span>
         </div>
-        <div class="quality-leads">
+        <div id="quality" class="quality-leads">
             <div class="lead-header">
                 <div class="head-wrapper">
                     <h1>Qualify leads and attribute traffic</h1>
@@ -72,7 +83,7 @@
 
             </div>
         </div>
-        <div class="enrichment">
+        <div id="enrichment" class="enrichment">
             <div class="enrichment-section">
                 <div class="en-content">
                     <h2>Enrichment</h2>
@@ -108,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="conversions">
+        <div id="conversions" class="conversions">
             <div class="content">
                 <h2>
                     Increase conversions and lower bounce
@@ -124,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial">
+        <div id="testimonial" class="testimonial">
             <div class="content">
                 <p>"Clearbit saves me a ton of time in lead research, and having full lead profiles automatically
                     available is amazing. I racommend Clearbit to our users daily."</p>
@@ -189,6 +200,11 @@
                 <div class="user"><span><a href="">SIGN IN</a></span><span><a href="">SIGN UP</a></span></div>
             </div>
         </footer>
+        <div class="scroller">
+            <div class="scroller-wrapper">
+                <span>TOP</span>
+            </div>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
