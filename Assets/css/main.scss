@@ -29,24 +29,31 @@ html * {
             color: $color2;
             align-self: center;
             text-decoration: none;
+            display: flex;
             span {
                 i {
                     margin-right: 5px;
-                    margin-top: 15px;
+                    @media screen and (max-width: 980px) {
+                        display: none;
+                    }
                 }
             }
             .logoText {
                 font-size: 2rem;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+                align-self: center;
             }
         }
     }
-    >ul {
+    >ul.nav-desktop {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-basis: 75%;
+        @media screen and (max-width: 980px) {
+            display: none;
+        }
         >li {
             list-style: none;
             padding: 1rem;
@@ -59,6 +66,53 @@ html * {
                 border: 1px solid $color2;
                 padding: .5rem;
             }
+        }
+    }
+    >ul.nav-mobile {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 75%;
+        align-content: center;
+        position: relative;
+        >div.menu-icon {
+            &::after {
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                content: '\f0c9';
+                display: flex;
+                font-size: 4rem;
+                padding: 1rem;
+                color: rgba($color5, .9);
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        >div.menu-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: absolute;
+            top: 100%;
+            z-index: 1;
+            width: 100%;
+            background-color: $color1;
+            display: none;
+            li {
+                list-style: none;
+                padding: 1rem;
+                 a {
+                     text-decoration: none;
+                     padding: 1rem;
+                     color: rgba($color5, .9);
+                 }
+            }
+        }
+        @media screen and (min-width: 980px) {
+            display: block;
+        }
+        @media screen and (min-width: 980px) {
+            display: none;
         }
     }
 }

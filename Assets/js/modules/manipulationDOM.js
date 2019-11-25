@@ -9,11 +9,16 @@ const mainScrollFunction = () => {
         });
         // Anchor scroll
         $('a[href^="#"]').click(function(e) {
+            var menuItems = document.getElementById("menu-items");
             e.preventDefault();
             var id = $(this).attr("href");
             $('html,body').animate({scrollTop: $(id).offset().top},'slow');
+            menuItems.style.display = "none";
         });
-    } )
+    })
+
+
+
     function scrollFunction() {
         var scrollTop = $(window).scrollTop();
         var docHeight = $(document).height();

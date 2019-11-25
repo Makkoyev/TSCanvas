@@ -30,23 +30,33 @@ html * {
 #nav-bar div > a {
   color: #2b8f9e;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #nav-bar div > a span i {
   margin-right: 5px;
-  margin-top: 15px;
+}
+
+@media screen and (max-width: 980px) {
+  #nav-bar div > a span i {
+    display: none;
+  }
 }
 
 #nav-bar div > a .logoText {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-#nav-bar > ul {
+#nav-bar > ul.nav-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,20 +70,98 @@ html * {
       flex-basis: 75%;
 }
 
-#nav-bar > ul > li {
+@media screen and (max-width: 980px) {
+  #nav-bar > ul.nav-desktop {
+    display: none;
+  }
+}
+
+#nav-bar > ul.nav-desktop > li {
   list-style: none;
   padding: 1rem;
 }
 
-#nav-bar > ul > li a {
+#nav-bar > ul.nav-desktop > li a {
   text-decoration: none;
   color: #2b8f9e;
 }
 
-#nav-bar > ul > li .btn {
+#nav-bar > ul.nav-desktop > li .btn {
   border-radius: 3px;
   border: 1px solid #2b8f9e;
   padding: .5rem;
+}
+
+#nav-bar > ul.nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-icon::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0c9';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 4rem;
+  padding: 1rem;
+  color: rgba(47, 55, 58, 0.9);
+}
+
+#nav-bar > ul.nav-mobile > div.menu-icon:hover {
+  cursor: pointer;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+
+#nav-bar > ul.nav-mobile > div.menu-items li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: rgba(47, 55, 58, 0.9);
+}
+
+@media screen and (min-width: 980px) {
+  #nav-bar > ul.nav-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #nav-bar > ul.nav-mobile {
+    display: none;
+  }
 }
 
 main {
