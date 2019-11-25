@@ -944,8 +944,6 @@ main .mailing-list > div .mailing button:hover {
 }
 
 main footer {
-  height: 50vh;
-  min-height: 500px;
   background: #212a33;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,6 +952,7 @@ main footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
 }
 
 main footer > div {
@@ -963,8 +962,8 @@ main footer > div {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main footer > div ul {
@@ -976,6 +975,15 @@ main footer > div ul {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+@media screen and (max-width: 900px) {
+  main footer > div ul {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 main footer > div ul .li-heading {
@@ -1008,6 +1016,15 @@ main footer .footer2 {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 900px) {
+  main footer .footer2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main footer .footer2 div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1020,6 +1037,12 @@ main footer .footer2 .copyright {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  main footer .footer2 .copyright {
+    padding: 1rem;
+  }
 }
 
 main footer .footer2 .copyright a {
@@ -1060,6 +1083,12 @@ main footer .footer2 .user {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 900px) {
+  main footer .footer2 .user {
+    padding: 1rem;
+  }
+}
+
 main footer .footer2 .user span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,6 +1122,24 @@ main .scroller {
   background-color: #f48d84;
   border-radius: 50%;
   display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  main .scroller {
+    left: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .scroller {
+    left: 80vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .scroller {
+    left: 75vw;
+  }
 }
 
 main .scroller .scroller-wrapper {
